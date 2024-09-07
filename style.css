@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+/* header  section */
+.navigation{
+    width:15%;
+    float: left;
+    position: fixed;
+    display: flex;
+    background-color:inherit;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:flex-start; 
+    padding: 8px 12px 20px 18px;
+    border-right: 1px solid gray;
+}
+
+
+.logo img{
+    margin: 35px 0px;
+    height: 32px;
+    width: 117px;
+    object-fit: cover;
+}
+
+.links{
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+
+ul li a button{
+    display:flex;
+    background-color:inherit;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin:  6px 0px;
+    padding: 8px;
+    font-size: 18px;
+}
+
+ul li a button img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 6px;
+}
+
+ul li a button:hover{
+    border: 1px solid gainsboro;
+    border-radius: 35px;
+    color: lightslategray;
+}
+
+ul li a button i{
+    font-size: 23px;
+    padding: 13px 13px 13px 0px;
+    margin: 0px;
+}
+
+#more{
+    margin-top: 129px;
+    font-size: small;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#more .menu div{
+    width: 26px;
+    height: 3px;
+    background-color:white;
+    margin: 8px 0px;
+}
+
+#more button{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    cursor: pointer;
+    
+}
+
+/* section :first */
+
+/* .first{
+    width: 0%;    
+} */
+
+.story{
+    position: absolute;
+    margin-left: 365px;
+    /* border: 1px solid gray; */
+    top: 40px;
+}
+
+.stories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .story .stories a{
+    text-decoration: none;
+    color: white;
+}
+
+ .story .stories a img{
+    margin: 0px 31px 0px 31px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 5px;
+    border: 2px solid rgb(252, 4, 248);
+}
+
+.stories a p{
+    padding-left: 35px;
+    text-overflow: ellipsis;
+}
+
+/* post section */
+
+.post{
+    position:relative;
+    width: fit-content;
+    /* border:2px solid red; */
+    margin-left: 425px;
+    top: 135px;
+}
+.post .uppertext{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    /* border: 2px solid green; */
+    padding:10px 0px;
+}
+
+.post .uppertext .leftside{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+.post .uppertext .leftside .img img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 3px;
+    margin: 10px 10px 10px 0px;
+    border: 2px solid mediumslateblue;
+}
+.post .uppertext .leftside span{
+    padding: 10px;
+}
+
+.post .uppertext .rightside{
+    color: white;
+    
+}
+.post .pics img{
+    height: 530px;
+    width: 636px;
+}
+.post .like-share-comment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post .like-share-comment .posticons i{
+    color: white;
+    padding-top: 4px;
+    padding-right: 14px;
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+.post .lowertext{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+}
+
+.post .postfooter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+    border-bottom: 1px solid grey;
+}
+.post .postfooter .addcomment input{
+    width:100%;
+    outline: none;
+    background-color: black;
+    border: none;
+    color: gray;
+    font-size: medium;
+    margin-bottom: 8px;
+}
+
+
+/* Last section of suggestions */
+
+.last{
+    position: absolute;
+    top: 40px;
+    width: 20%;
+    left: 75%;
+}
+.last .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.last .top .leftside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last .top .leftside .profilepic img{
+    width: 65px;
+    height:65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.last .top .leftside .myid{
+    padding-left: 15px;
+}
+.last .top .leftside .myid p{
+    padding-bottom: 4px;
+}
+
+.last .mid{
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.last .mid .seeall a{
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+}
+
+.last .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13px;
+}
+.last .bottom .names{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last .bottom .names .image img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.last .bottom .names .profilename{
+    padding-left: 10px;
+}
+.last .bottom .names .profilename span{
+    padding-top: 4px;
+    font-size: small;
+}
+
+.last .bottom .tofollow a{
+    text-decoration: none;
+    color:rgb(64, 127, 245);
+}
+
+/* footer section  */
+ .last .footer{
+    float: right;
+    margin-top: 45px;
+}
+
+ .last .footer .about p{
+    display: inline-block;
+    text-overflow: ellipsis;
+    text-justify: inter-cluster;
+}
+ .last .footer .copyright{
+    padding-top: 25px;
+ }
