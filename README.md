@@ -1,5 +1,5 @@
 # Frontend
-Projects with only Frontend Development
+Project with only Frontend Development
 # How to run in your Computer
 First Clone these files in your System and then just right click on the html file .
 This will open a tab in oyur Browser with the Frontend website.
